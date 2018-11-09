@@ -1,0 +1,87 @@
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+h2 {
+    color: #343F3B;
+}
+body {
+    background: #f8f9fa !important;
+}
+nav {
+    background: #323334e6 !important;
+}
+#bioPanel {
+    background-image: url("/images/raelakes_img.jpg");
+}
+#skillPanel {
+    background-image: url("/images/bigsur_img.jpg");
+}
+#workPanel {
+    background-image: url("/images/raelakes2_img.jpg");
+}
+#projectPanel {
+    background-image: url("/images/jtree_img.jpg");
+}
+
+.panelLink:hover{
+    text-decoration:none;
+}
+.homePanel {
+    margin: 3px;
+    height: 190px;
+    background-size: cover;
+}
+    .homePanel h1 {
+        color: #323334 !important;
+        text-align: center;
+        vertical-align: middle;
+        margin-top: unset;
+    }
+
+    .homePanel .overlay {
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: rgba(0,0,0,0);
+        -moz-transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+        .homePanel .overlay:hover {
+            background: rgba(0,0,0,0.3);
+        }

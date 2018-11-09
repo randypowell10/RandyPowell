@@ -1,0 +1,90 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="row border-bottom mb-1 pb-1">
+    <div class="col-md-4 my-auto">
+        <img class="w-100 rounded-circle" src="~/images/portrait_img.jpg" />
+    </div>
+    <div class="col-md-8 my-auto">
+        <h2>Good <span id="TOD">...</span>! I'm Randy!</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Nam dictum, risus ut ultrices feugiat, urna purus laoreet ex,
+            et ultricies quam tortor et tortor. Aliquam mattis consectetur pulvinar.
+            Praesent non arcu quis ante ultrices convallis. Aliquam euismod magna non
+            molestie sollicitudin. Maecenas sit amet facilisis diam. Lorem ipsum dolor
+            sit amet, consectetur adipiscing elit. Vestibulum non enim at velit egestas
+            tempus id ac mauris. Morbi suscipit lorem sed ex congue, sed suscipit lacus
+            tincidunt. Nam posuere, justo id vestibulum elementum, ipsum metus congue eros,
+            a elementum magna ipsum tristique lorem. Ut auctor eget erat at rhoncus.
+        </p>
+    </div>
+    @*<div class="col-md-1 my-auto">
+            <a class="d-block" href="https://github.com/randypowell10">
+                <i class="fab fa-github fa-3x"></i>
+            </a>
+            <a class="d-block" href="mailto:rkpowell@captechu.edu">
+                <i class="fas fa-envelope fa-3x"></i>
+            </a>
+        </div>*@
+</div>
+<div class="row">
+    <div class="col-md-6 px-0">
+        <a class="panelLink" asp-page="/About">
+            <div class="homePanel rounded" id="bioPanel">
+                <span class="overlay rounded">
+                    <h1>Biography</h1>
+
+                </span>
+            </div>
+        </a>
+    </div>
+
+    <div class="col-md-6 px-0">
+        <a class="panelLink" asp-page="/Skills">
+            <div id="skillPanel" class=" homePanel rounded">
+                <span class="overlay rounded">
+                    <h1>Skills</h1>
+                </span>
+            </div>
+        </a>
+    </div>
+    <div class="col-md-6 px-0">
+        <a class="panelLink" asp-page="/Projects">
+            <div id="projectPanel" class="homePanel rounded">
+                <span class="overlay rounded">
+                    <h1>Projects</h1>
+                </span>
+            </div>
+        </a>
+    </div>
+    <div class="col-md-6 px-0">
+        <a class="panelLink" asp-page="/Work">
+            <div id="workPanel" class=" homePanel rounded">
+                <span class="overlay rounded">
+                    <h1> Work Experience</h1>
+                </span>
+            </div>
+        </a>
+    </div>
+</div>
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            var time = new Date().getHours();
+            var TOD;
+            if (time >= 3 && time <= 11) {
+                TOD = "Morning";
+            } else if (time >= 12 && time <= 16) {
+                TOD = "Afternoon";
+            } else {
+                TOD = "Evening";
+            }
+            $("#TOD").html(TOD);
+        });
+        
+    </script>
+}

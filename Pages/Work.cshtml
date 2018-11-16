@@ -4,5 +4,36 @@
     ViewData["Title"] = "Work";
 }
 
-<h2>Work</h2>
+<div class="headerPanel workPanel">
+    <h2 class="text-center">Work Experience</h2>
+</div>
+<div class="row">
+    @foreach (var exp in Model.Experience)
+    {
+    <div class="col-md-4 p-1">
+        <a class="cardLink" asp-page="Experiences/Details" asp-route-id="@exp.ID">
+            <div class="card">
+                <div class="card-body workCard">
+                    <h3 class="card-title text-center">@exp.Title</h3>
+                    <h4 class="card-subtitle mb-2 text-muted">@exp.Organization</h4>
+                    <p class="card-text"><i class="fas fa-map-marker-alt"></i> @exp.Location</p>
+                    <p class="card-text"><i class="fas fa-calendar-alt"></i> @exp.Dates</p>
+                    @if (exp.ExperienceSkills.Count > 0)
+                    {
+                    <p class="card-text">Skills Used:</p>
 
+                    <ul class="cardList">
+                        @foreach (var skill in exp.ExperienceSkills)
+                        {
+                            <li>@Model.Skills.FirstOrDefault(i => i.ID == skill.SkillId).Title</li>
+                        }
+                    </ul>
+                    }
+                    <p class="card-text">@exp._desc.Split(";")[0]</p>
+                </div>
+
+            </div>
+        </a>
+    </div>
+    }
+</div>

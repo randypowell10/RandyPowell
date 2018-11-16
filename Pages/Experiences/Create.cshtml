@@ -1,0 +1,95 @@
+﻿@page
+@model RandyPowell.Pages.Experiences.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<h4>Experience</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Experience.Title" class="control-label"></label>
+                <input asp-for="Experience.Title" class="form-control" />
+                <span asp-validation-for="Experience.Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Experience.Organization" class="control-label"></label>
+                <input asp-for="Experience.Organization" class="form-control" />
+                <span asp-validation-for="Experience.Organization" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Experience.Location" class="control-label"></label>
+                <input asp-for="Experience.Location" class="form-control" />
+                <span asp-validation-for="Experience.Location" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Experience.Dates" class="control-label"></label>
+                <input asp-for="Experience.Dates" class="form-control" />
+                <span asp-validation-for="Experience.Dates" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Experience.Type" class="control-label"></label>
+                <ul style="list-style-type:none">
+                    @foreach (var type in Model.types)
+                    {
+                        <li>
+                            <input asp-for="Experience.Type" class="" type="radio" value="@Array.IndexOf(Model.types, type)" /> @type
+                        </li>
+                    }
+
+                </ul>
+                <span asp-validation-for="Experience.Type" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Experience._desc" class="control-label"></label>
+                <input asp-for="Experience._desc" class="form-control" />
+                <span asp-validation-for="Experience._desc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <table>
+                        <tr>
+                            @{
+                                int cnt = 0;
+
+                                foreach (var skill in Model.ExperienceSkillList)
+                                {
+                                    if (cnt++ % 3 == 0)
+                                    {
+                                    @:</tr><tr>
+                                    }
+                                    @:<td>
+                                        <input type="checkbox"
+                                               name="selectedSkills"
+                                               value="@skill.SkillId"
+                                           />
+                                    @skill.Skill.Title
+                                    @:</td>
+                                }
+                            @:</tr>
+                            }
+                        </table>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-default" />
+                </div>
+            </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

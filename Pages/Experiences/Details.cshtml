@@ -1,0 +1,54 @@
+﻿@page "{id:int}"
+@model RandyPowell.Pages.Experiences.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>@Html.DisplayFor(model => model.Experience.Title)</h2>
+<hr />
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Experience.Title)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Experience.Title)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Experience.Organization)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Experience.Organization)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Experience.Location)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Experience.Location)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Experience.Dates)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Experience.Dates)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Experience.Type)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Experience.Type)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Experience._desc)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Experience._desc)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Experience.ID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

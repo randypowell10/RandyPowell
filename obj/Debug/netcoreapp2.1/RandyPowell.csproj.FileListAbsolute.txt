@@ -32,4 +32,14 @@ C:\Users\randy\source\repos\RandyPowell\RandyPowell\obj\Debug\netcoreapp2.1\Rand
 C:\Users\randy\source\repos\RandyPowell\RandyPowell\obj\Debug\netcoreapp2.1\RandyPowell.csproj.CopyComplete
 C:\Users\randy\source\repos\RandyPowell\RandyPowell\obj\Debug\netcoreapp2.1\Razor\Pages\Projects.g.cshtml.cs
 C:\Users\randy\source\repos\RandyPowell\RandyPowell\obj\Debug\netcoreapp2.1\Razor\Pages\Work.g.cshtml.cs
-C:\Users\randy\source\repos\RandyPowell\RandyPowell\obj\Debug\netcoreapp2.1\Razor\Pages\Skills.g.cshtml.cs
+C:\Users\randy\source\repos\RandyPowell\RandyPowell\obj\Debug\netcoreapp2.1\Razor\Pages\Experiences\Create.g.cshtml.cs
+C:\Users\randy\source\repos\RandyPowell\RandyPowell\obj\Debug\netcoreapp2.1\Razor\Pages\Experiences\Delete.g.cshtml.cs
+C:\Users\randy\source\repos\RandyPowell\RandyPowell\obj\Debug\netcoreapp2.1\Razor\Pages\Experiences\Details.g.cshtml.cs
+C:\Users\randy\source\repos\RandyPowell\RandyPowell\obj\Debug\netcoreapp2.1\Razor\Pages\Experiences\Edit.g.cshtml.cs
+C:\Users\randy\source\repos\RandyPowell\RandyPowell\obj\Debug\netcoreapp2.1\Razor\Pages\Experiences\Index.g.cshtml.cs
+C:\Users\randy\source\repos\RandyPowell\RandyPowell\obj\Debug\netcoreapp2.1\Razor\Pages\Skills\Create.g.cshtml.cs
+C:\Users\randy\source\repos\RandyPowell\RandyPowell\obj\Debug\netcoreapp2.1\Razor\Pages\Skills\Delete.g.cshtml.cs
+C:\Users\randy\source\repos\RandyPowell\RandyPowell\obj\Debug\netcoreapp2.1\Razor\Pages\Skills\Details.g.cshtml.cs
+C:\Users\randy\source\repos\RandyPowell\RandyPowell\obj\Debug\netcoreapp2.1\Razor\Pages\Skills\Edit.g.cshtml.cs
+C:\Users\randy\source\repos\RandyPowell\RandyPowell\obj\Debug\netcoreapp2.1\Razor\Pages\Skills\Index.g.cshtml.cs
+C:\Users\randy\source\repos\RandyPowell\RandyPowell\obj\Debug\netcoreapp2.1\Razor\Pages\Skill.g.cshtml.cs

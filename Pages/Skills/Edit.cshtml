@@ -1,0 +1,49 @@
+﻿@page "{id:int}"
+@model RandyPowell.Pages.Skills.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>Skill</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Skill.ID" />
+            <div class="form-group">
+                <label asp-for="Skill.Title" class="control-label"></label>
+                <input asp-for="Skill.Title" class="form-control" />
+                <span asp-validation-for="Skill.Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Skill.Type" class="control-label"></label>
+
+                <ul style="list-style-type:none">
+                    @foreach (var type in Model.types)
+                    {
+                        <li>
+                            <input asp-for="Skill.Type" class="" type="radio" value="@Array.IndexOf(Model.types, type)" /> @type
+                        </li>
+                    }
+
+                </ul>
+                <span asp-validation-for="Skill.Type" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

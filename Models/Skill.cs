@@ -10,5 +10,7 @@ namespace RandyPowell.Models
         public int ID { get; set; }
         public string Title { get; set; }
         public int Type { get; set; }
+        public ICollection<ExperienceSkill> ExperienceSkills { get; set; }
+
     }
 }

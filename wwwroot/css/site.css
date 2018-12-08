@@ -1,4 +1,4 @@
-/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification 
 for details on configuring this project to bundle and minify static web assets. */
 body {
     padding-top: 50px;
@@ -34,4 +34,158 @@ body {
     .carousel-caption {
         display: none;
     }
+}
+
+h2 {
+    color: #343F3B;
+}
+
+body {
+    background: #f8f9fa !important;
+}
+
+nav {
+    background: #323334e6 !important;
+}
+
+.bioPanel {
+    background-image: url("/images/raelakes_img.jpg");
+}
+
+.skillPanel {
+    background-image: url("/images/bigsur_img.jpg");
+}
+
+.workPanel {
+    background-image: url("/images/raelakes2_img.jpg");
+}
+
+.projectPanel {
+    background-image: url("/images/jtree_img.jpg");
+}
+
+.panelLink:hover {
+    text-decoration: none;
+}
+
+.homePanel {
+    margin: 3px;
+    height: 190px;
+    background-size: cover;
+}
+
+    .homePanel h1 {
+        color: #323334 !important;
+        text-align: center;
+        vertical-align: middle;
+        margin-top: unset;
+    }
+
+    .homePanel .overlay {
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: rgba(0,0,0,0);
+        -moz-transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+
+        .homePanel .overlay:hover {
+            background: rgba(0,0,0,0.3);
+        }
+
+.headerPanel {
+    height: 140px;
+    background-size: cover;
+    margin-bottom: 5px;
+    /*margin-right: 0%;
+    margin-left: 0%;*/
+}
+
+    .headerPanel h2 {
+        font-size: 2.15rem;
+    }
+
+@media only screen and (min-width: 768px) {
+    .headerPanel {
+        height: 220px;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+        .headerPanel h2 {
+            font-size: 3.5rem;
+        }
+}
+
+.skillGroup {
+    border-color: #427772;
+}
+
+    .skillGroup ul li {
+        list-style: none;
+        text-align: left;
+        font-size: 1.15rem;
+        color: #a57046;
+    }
+
+    .skillGroup h3 {
+        color: #533322;
+    }
+
+.workCard .card-title {
+    color: #df9478;
+}
+
+.projectCard .card-title {
+    color: #437f7a;
+}
+
+.cardList {
+    list-style-type: none;
+    padding-left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0.25rem;
+}
+
+    .cardList li {
+        padding: 5px;
+        display: inline-block;
+        color: #212529;
+    }
+
+        .cardList li:nth-child(even) {
+            background: #e7f9fc;
+        }
+
+        .cardList li:nth-child(odd) {
+            background: #f0ebe5;
+        }
+
+.cardLink {
+    color: unset;
+}
+
+    .cardLink:hover {
+        text-decoration: none;
+        color: unset;
+    }
+
+.card:hover {
+    background: #323334;
+    color: white;
+}
+
+#main-h1 {
+    font-size: 3.85rem;
+}
+
+.steelTeal {
+    color: #528E89;
+}
+
+.outerSpace {
+    color: #43514C;
 }

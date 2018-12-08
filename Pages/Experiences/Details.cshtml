@@ -4,51 +4,52 @@
 @{
     ViewData["Title"] = "Details";
 }
+<div class="">
+    @if (Model.Experience.Type == 0)
+    {
+        <div class="headerPanel workPanel rounded">
+            <h2 class="text-center">Job: @Html.DisplayFor(model => model.Experience.Title)</h2>
+        </div>
+    }
+    else
+    {
+        <div class="headerPanel projectPanel rounded">
+            <h2 class="text-center">Project: @Html.DisplayFor(model => model.Experience.Title)</h2>
+        </div>
+    }
+    <div>
+        <h4 class="text-muted">@Html.DisplayFor(model => model.Experience.Organization)</h4>
+        <p class=""><i class="fas fa-map-marker-alt"></i> @Html.DisplayFor(model => model.Experience.Location)</p>
+        <p class=""><i class="fas fa-calendar-alt"></i> @Html.DisplayFor(model => model.Experience.Dates)</p>
 
-<h2>@Html.DisplayFor(model => model.Experience.Title)</h2>
-<hr />
+        @if (Model.Experience.ExperienceSkills.Count > 0)
+        {
+            <p class="card-text">Skills Used:</p>
 
-<div>
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Experience.Title)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Experience.Title)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Experience.Organization)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Experience.Organization)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Experience.Location)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Experience.Location)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Experience.Dates)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Experience.Dates)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Experience.Type)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Experience.Type)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Experience._desc)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Experience._desc)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-page="./Edit" asp-route-id="@Model.Experience.ID">Edit</a> |
-    <a asp-page="./Index">Back to List</a>
+            <ul class="cardList">
+                @foreach (var skill in Model.Experience.ExperienceSkills)
+                {
+                    <li>@Model.Skills.FirstOrDefault(i => i.ID == skill.SkillId).Title</li>
+                }
+            </ul>
+        }
+        <ul>
+            @foreach (var desc in Model.Experience._desc.Split(";"))
+            {
+                <li>@desc</li>
+            }
+        </ul>
+
+
+    </div>
+    <div>
+        @if (Model.Experience.Type == 0)
+        {
+            <a asp-page="/Work">Back to Job List</a>
+        }
+        else
+        {
+            <a asp-page="/Projects">Back to Project List</a>
+        }
+    </div>
 </div>

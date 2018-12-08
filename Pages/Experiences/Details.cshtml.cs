@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace RandyPowell.Pages.Experiences
 {
-    [Authorize]
+    [AllowAnonymous]
     public class DetailsModel : PageModel
     {
         private readonly RandyPowell.Models.RandyPowellContext _context;
@@ -21,7 +21,7 @@ namespace RandyPowell.Pages.Experiences
         }
 
         public Experience Experience { get; set; }
-
+        public IList<Skill> Skills { get; set; }
         public async Task<IActionResult> OnGetAsync(int? id)
         {
             if (id == null)
@@ -29,8 +29,11 @@ namespace RandyPowell.Pages.Experiences
                 return NotFound();
             }
 
-            Experience = await _context.Experience.FirstOrDefaultAsync(m => m.ID == id);
-
+            Experience = await _context.Experience
+                .Include(i=>i.ExperienceSkills)
+                .FirstOrDefaultAsync(m => m.ID == id);             ;
+            Skills = await _context.Skill
+                .ToListAsync();
             if (Experience == null)
             {
                 return NotFound();

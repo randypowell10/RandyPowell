@@ -6,9 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using RandyPowell.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace RandyPowell.Pages.Experiences
 {
+    [Authorize]
     public class IndexModel : PageModel
     {
         private readonly RandyPowell.Models.RandyPowellContext _context;

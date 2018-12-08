@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="RandyPowell" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\randy\\source\\repos\\RandyPowell\\RandyPowell\\obj\\Release\\netcoreapp2\.1\\PubTmp\\Out\\$" />
+  </parameter>
+  <parameter name="RandyPowell.Models.RandyPowellContext" description="" value="Data Source=tcp:randypowelldbserver.database.windows.net,1433;Initial Catalog=RandyPowell_db;User Id=randypowell10@randypowelldbserver;Password=123Gamefreak!" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Users\\randy\\source\\repos\\RandyPowell\\RandyPowell\\obj\\Release\\netcoreapp2\.1\\PubTmp\\EFSQLScripts\\RandyPowell\.Models\.RandyPowellContext\.sql$" />
+  </parameter>
+</parameters>

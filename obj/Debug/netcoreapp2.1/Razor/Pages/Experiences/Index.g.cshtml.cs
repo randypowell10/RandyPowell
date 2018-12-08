@@ -61,7 +61,7 @@ using RandyPowell;
             WriteLiteral("\r\n<h2>Experiences</h2>\r\n<a class=\"btn-dark btn\" href=\"/../Skills\">Edit Skills</a>\r\n<p>\r\n    ");
             EndContext();
             BeginContext(197, 35, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bc16af5591d4d4f8ce339ea5caeaa51", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8ef35d05e8b04d668147c76b06dfa0f3", async() => {
                 BeginContext(218, 10, true);
                 WriteLiteral("Create New");
                 EndContext();
@@ -212,7 +212,7 @@ using RandyPowell;
             WriteLiteral("\r\n                </td>\r\n                <td>\r\n                    ");
             EndContext();
             BeginContext(1807, 53, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "580719e9eacd4c64a7b31b272567d0fd", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2b0dc20a8806491eaf8555b599d22992", async() => {
                 BeginContext(1852, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -247,7 +247,7 @@ using RandyPowell;
             WriteLiteral(" |\r\n                    ");
             EndContext();
             BeginContext(1884, 59, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b1c0e14f42da4822accd5b518325590c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "470d0c728e6d4c81bd10880e2b76d6eb", async() => {
                 BeginContext(1932, 7, true);
                 WriteLiteral("Details");
                 EndContext();
@@ -282,7 +282,7 @@ using RandyPowell;
             WriteLiteral(" |\r\n                    ");
             EndContext();
             BeginContext(1967, 57, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7221c9ffe23d4db9a2e8d349de24e735", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "89e0ece1ba284d56b0d0f2d4a7ca57c9", async() => {
                 BeginContext(2014, 6, true);
                 WriteLiteral("Delete");
                 EndContext();

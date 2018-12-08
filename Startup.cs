@@ -11,6 +11,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using RandyPowell.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc.Authorization;
+using Microsoft.AspNetCore.Authorization;
+
 
 namespace RandyPowell
 {
@@ -35,7 +39,10 @@ namespace RandyPowell
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-
+            services.AddIdentity<IdentityUser, IdentityRole>()
+                .AddEntityFrameworkStores<RandyPowellContext>()
+                .AddDefaultUI()
+                .AddDefaultTokenProviders();
             services.AddDbContext<RandyPowellContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("RandyPowellContext")));
         }
@@ -56,6 +63,7 @@ namespace RandyPowell
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
+            app.UseAuthentication();
 
             app.UseMvc();
         }

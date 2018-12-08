@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using RandyPowell.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace RandyPowell.Pages.Experiences
 {
+    [Authorize]
     public class EditModel : PageModel
     {
         public List<ExperienceSkill> ExperienceSkillList;

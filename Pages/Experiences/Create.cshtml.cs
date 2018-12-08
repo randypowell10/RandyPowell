@@ -6,9 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using RandyPowell.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace RandyPowell.Pages.Experiences
 {
+    [Authorize]
     public class CreateModel : PageModel
     {
         public List<ExperienceSkill> ExperienceSkillList;

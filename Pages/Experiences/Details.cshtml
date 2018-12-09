@@ -4,52 +4,55 @@
 @{
     ViewData["Title"] = "Details";
 }
-<div class="">
+<div>
     @if (Model.Experience.Type == 0)
     {
         <div class="headerPanel workPanel rounded">
-            <h2 class="text-center">Job: @Html.DisplayFor(model => model.Experience.Title)</h2>
+            <h2 class="text-center">Work Experience</h2>
         </div>
     }
     else
     {
         <div class="headerPanel projectPanel rounded">
-            <h2 class="text-center">Project: @Html.DisplayFor(model => model.Experience.Title)</h2>
+            <h2 class="text-center">Projects</h2>
         </div>
     }
-    <div>
-        <h4 class="text-muted">@Html.DisplayFor(model => model.Experience.Organization)</h4>
-        <p class=""><i class="fas fa-map-marker-alt"></i> @Html.DisplayFor(model => model.Experience.Location)</p>
-        <p class=""><i class="fas fa-calendar-alt"></i> @Html.DisplayFor(model => model.Experience.Dates)</p>
+        <div class="w-md-75 mx-auto @(Model.Experience.Type==0 ? "workCard":"projectCard") rounded p-1">
+            
+                <h3 class="card-title text-center">@Html.DisplayFor(model => model.Experience.Title)</h3>
+                <h4 class="text-muted text-center card-subtitle">@Html.DisplayFor(model => model.Experience.Organization)</h4>
+                <p class="text-center card-text mt-2 mb-0"><i class="fas fa-map-marker-alt"></i> @Html.DisplayFor(model => model.Experience.Location)</p>
+                <p class="text-center card-text mt-2 mb-0"><i class="fas fa-calendar-alt"></i> @Html.DisplayFor(model => model.Experience.Dates)</p>
 
-        @if (Model.Experience.ExperienceSkills.Count > 0)
-        {
-            <p class="card-text">Skills Used:</p>
-
-            <ul class="cardList">
-                @foreach (var skill in Model.Experience.ExperienceSkills)
+                @if (Model.Experience.ExperienceSkills.Count > 0)
                 {
-                    <li>@Model.Skills.FirstOrDefault(i => i.ID == skill.SkillId).Title</li>
+                    <p class="">Skills Used:</p>
+
+                    <ul class="cardList">
+                        @foreach (var skill in Model.Experience.ExperienceSkills)
+                        {
+                            <li>@Model.Skills.FirstOrDefault(i => i.ID == skill.SkillId).Title</li>
+                        }
+                    </ul>
                 }
-            </ul>
-        }
-        <ul>
-            @foreach (var desc in Model.Experience._desc.Split(";"))
-            {
-                <li>@desc</li>
-            }
-        </ul>
+                <ul>
+                    @foreach (var desc in Model.Experience._desc.Split(";"))
+                    {
+                        <li>@desc</li>
+                    }
+                </ul>
 
 
-    </div>
-    <div>
-        @if (Model.Experience.Type == 0)
-        {
-            <a asp-page="/Work">Back to Job List</a>
-        }
-        else
-        {
-            <a asp-page="/Projects">Back to Project List</a>
-        }
-    </div>
-</div>
+
+                <div>
+                    @if (Model.Experience.Type == 0)
+                    {
+                        <a class="btn btn-dark" role="button" asp-page="/Work">Return to List <i class="fas fa-undo-alt"></i></a>
+                    }
+                    else
+                    {
+                        <a class="btn btn-dark" role="button" asp-page="/Projects">Return to List <i class="fas fa-undo-alt"></i></a>
+                    }
+                </div>
+            </div>
+        </div>

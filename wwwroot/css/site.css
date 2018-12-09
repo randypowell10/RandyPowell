@@ -189,3 +189,26 @@ nav {
 .outerSpace {
     color: #43514C;
 }
+
+.btn-outline-skill {
+    color: #a57046;
+    background-color: transparent;
+    background-image: none;
+    border-color: #a57046;
+}
+    .btn-outline-skill:hover {
+        color: #fff;
+        background-color: #a57046;
+        border-color: #a57046;
+    }
+.w-md-75 {
+    width: 100%;
+}
+@media screen and (min-width: 767px) {
+    .w-md-75 {
+        width: 75%;
+    }
+}
+.bioPara {
+    text-indent: 40px;
+}

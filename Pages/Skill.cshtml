@@ -11,49 +11,144 @@
     <div class="col-md-6 border skillGroup">
         <h3>Front End</h3>
         <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
+            @foreach (var skill in Model.Skills.Where(i=>i.Type==0)) {
+            <li>
+                <a class="btn btn-outline-skill mb-1" href="#@skill.Title-col" data-toggle="collapse" aria-expanded="false" aria-controls="@skill.Title-col">
+                    @skill.Title <i class="fas fa-caret-down"></i>
+                </a>
+                <div class="border ml-5 rounded p-1 collapse" id="@skill.Title-col">
+
+                    <p class="mb-0 text-left">Used in...</p>
+                    @foreach (var exp in skill.ExperienceSkills)
+                    {
+                    <a class="btn btn-dark mt-1" role="button" asp-page="Experiences/Details" asp-route-id="@exp.ExperienceId">
+                        @Model.Experience.FirstOrDefault(i => i.ID == exp.ExperienceId).Title
+                    </a>
+                    }
+
+                </div>
+            </li>
+            }
         </ul>
     </div>
     <div class="col-md-6 border skillGroup">
         <h3>Back End</h3>
         <ul>
-            <li>PHP</li>
-            <li>Laravel</li>
-            <li>MySQL</li>
+            @foreach (var skill in Model.Skills.Where(i => i.Type == 1))
+            {
+                <li>
+                    <a class="btn btn-outline-skill mb-1" href="#@skill.Title-col" data-toggle="collapse" aria-expanded="false" aria-controls="@skill.Title-col">
+                        @skill.Title <i class="fas fa-caret-down"></i>
+                    </a>
+                    <div class="border ml-5 rounded p-1 collapse" id="@skill.Title-col">
+
+                        <p class="mb-0 text-left">Used in...</p>
+                        @foreach (var exp in skill.ExperienceSkills)
+                        {
+                            <a class="btn btn-dark mt-1" role="button" asp-page="Experiences/Details" asp-route-id="@exp.ExperienceId">
+                                @Model.Experience.FirstOrDefault(i => i.ID == exp.ExperienceId).Title
+                            </a>
+                        }
+
+                    </div>
+                </li>
+            }
         </ul>
     </div>
     <div class="col-md-6 border skillGroup">
         <h3>Embedded Systems</h3>
         <ul>
-            <li>Python</li>
-            <li>Raspberry Pi</li>
-            <li>Digital Design</li>
+            @foreach (var skill in Model.Skills.Where(i => i.Type == 2))
+            {
+                <li>
+                    <a class="btn btn-outline-skill mb-1" href="#@skill.Title-col" data-toggle="collapse" aria-expanded="false" aria-controls="@skill.Title-col">
+                        @skill.Title <i class="fas fa-caret-down"></i>
+                    </a>
+                    <div class="border ml-5 rounded p-1 collapse" id="@skill.Title-col">
+
+                        <p class="mb-0 text-left">Used in...</p>
+                        @foreach (var exp in skill.ExperienceSkills)
+                        {
+                            <a class="btn btn-dark mt-1" role="button" asp-page="Experiences/Details" asp-route-id="@exp.ExperienceId">
+                                @Model.Experience.FirstOrDefault(i => i.ID == exp.ExperienceId).Title
+                            </a>
+                        }
+
+                    </div>
+                </li>
+            }
         </ul>
     </div>
     <div class="col-md-6 border skillGroup">
         <h3>Other Languages</h3>
         <ul>
-            <li>C++</li>
-            <li>C</li>
-            <li>Java</li>
+            @foreach (var skill in Model.Skills.Where(i => i.Type == 3))
+            {
+                <li>
+                    <a class="btn btn-outline-skill mb-1" href="#@skill.Title-col" data-toggle="collapse" aria-expanded="false" aria-controls="@skill.Title-col">
+                        @skill.Title <i class="fas fa-caret-down"></i>
+                    </a>
+                    <div class="border ml-5 rounded p-1 collapse" id="@skill.Title-col">
+
+                        <p class="mb-0 text-left">Used in...</p>
+                        @foreach (var exp in skill.ExperienceSkills)
+                        {
+                            <a class="btn btn-dark mt-1" role="button" asp-page="Experiences/Details" asp-route-id="@exp.ExperienceId">
+                                @Model.Experience.FirstOrDefault(i => i.ID == exp.ExperienceId).Title
+                            </a>
+                        }
+
+                    </div>
+                </li>
+            }
         </ul>
     </div>
     <div class="col-md-6 border skillGroup">
         <h3>Operating Systems</h3>
         <ul>
-            <li>Raspbian</li>
-            <li>Ubuntu</li>
-            <li>Windows</li>
+            @foreach (var skill in Model.Skills.Where(i => i.Type == 4))
+            {
+                <li>
+                    <a class="btn btn-outline-skill mb-1" href="#@skill.Title-col" data-toggle="collapse" aria-expanded="false" aria-controls="@skill.Title-col">
+                        @skill.Title <i class="fas fa-caret-down"></i>
+                    </a>
+                    <div class="border ml-5 rounded p-1 collapse" id="@skill.Title-col">
+
+                        <p class="mb-0 text-left">Used in...</p>
+                        @foreach (var exp in skill.ExperienceSkills)
+                        {
+                            <a class="btn btn-dark mt-1" role="button" asp-page="Experiences/Details" asp-route-id="@exp.ExperienceId">
+                                @Model.Experience.FirstOrDefault(i => i.ID == exp.ExperienceId).Title
+                            </a>
+                        }
+
+                    </div>
+                </li>
+            }
         </ul>    
     </div>
     <div class="col-md-6 border skillGroup">
         <h3>Development Tools</h3>
         <ul>
-            <li>GitHub</li>
-            <li>JIRA</li>
-            <li>Visual Studio</li>
+            @foreach (var skill in Model.Skills.Where(i => i.Type == 5))
+            {
+                <li>
+                    <a class="btn btn-outline-skill mb-1" href="#@skill.Title-col" data-toggle="collapse" aria-expanded="false" aria-controls="@skill.Title-col">
+                        @skill.Title <i class="fas fa-caret-down"></i>
+                    </a>
+                    <div class="border ml-5 rounded p-1 collapse" id="@skill.Title-col">
+
+                        <p class="mb-0 text-left">Used in...</p>
+                        @foreach (var exp in skill.ExperienceSkills)
+                        {
+                            <a class="btn btn-dark mt-1" role="button" asp-page="Experiences/Details" asp-route-id="@exp.ExperienceId">
+                                @Model.Experience.FirstOrDefault(i => i.ID == exp.ExperienceId).Title
+                            </a>
+                        }
+
+                    </div>
+                </li>
+            }
         </ul>
     </div>
 

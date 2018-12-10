@@ -66,7 +66,7 @@ using RandyPowell;
             WriteLiteral("\r\n<div class=\"row border-bottom mb-1 pb-1\">\r\n    <div class=\"col-sm-6 col-md-4 my-auto\">\r\n        ");
             EndContext();
             BeginContext(169, 68, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "bcdd5a66a9dc4976aefc341d4f8f960f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "2759e3653515486880c660a81fd250fe", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -96,7 +96,7 @@ using RandyPowell;
         ");
             EndContext();
             BeginContext(645, 130, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "23bcc1cebbac476e80872f29994c217c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "07a5537d85f6476ea9fd64a0440ab6ac", async() => {
                 BeginContext(733, 38, true);
                 WriteLiteral("<i class=\"fas fa-file-pdf\"></i> Resume");
                 EndContext();
@@ -130,7 +130,7 @@ using RandyPowell;
             WriteLiteral("</div>\r\n<div class=\"row\">\r\n    <div class=\"col-md-6 px-0\">\r\n        ");
             EndContext();
             BeginContext(1677, 242, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "aa4f715084184fb4831d8340490f5461", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1b2c26b216484f9aa6f3b78ea59c7a06", async() => {
                 BeginContext(1716, 199, true);
                 WriteLiteral("\r\n            <div class=\"homePanel rounded bioPanel\">\r\n                <span class=\"overlay rounded\">\r\n                    <h1>Biography</h1>\r\n\r\n                </span>\r\n            </div>\r\n        ");
                 EndContext();
@@ -153,7 +153,7 @@ using RandyPowell;
             WriteLiteral("\r\n    </div>\r\n\r\n    <div class=\"col-md-6 px-0\">\r\n        ");
             EndContext();
             BeginContext(1976, 239, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2be0a0dbc7484177bb470df7b5583ce4", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4b63bea2609e4c09ace2a51b7456880a", async() => {
                 BeginContext(2015, 196, true);
                 WriteLiteral("\r\n            <div class=\"skillPanel homePanel rounded\">\r\n                <span class=\"overlay rounded\">\r\n                    <h1>Skills</h1>\r\n                </span>\r\n            </div>\r\n        ");
                 EndContext();
@@ -176,7 +176,7 @@ using RandyPowell;
             WriteLiteral("\r\n    </div>\r\n    <div class=\"col-md-6 px-0\">\r\n        ");
             EndContext();
             BeginContext(2270, 246, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c5878f0fd87546c39b5a33bc159c0b35", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2462d623e2aa4adebadfc7da8902b570", async() => {
                 BeginContext(2312, 200, true);
                 WriteLiteral("\r\n            <div class=\"projectPanel homePanel rounded\">\r\n                <span class=\"overlay rounded\">\r\n                    <h1>Projects</h1>\r\n                </span>\r\n            </div>\r\n        ");
                 EndContext();
@@ -199,7 +199,7 @@ using RandyPowell;
             WriteLiteral("\r\n    </div>\r\n    <div class=\"col-md-6 px-0\">\r\n        ");
             EndContext();
             BeginContext(2571, 247, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3ff479fce4d7413c9e04c2ccb43d0e0e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "93117738aca6484f85b549e8834c769f", async() => {
                 BeginContext(2609, 205, true);
                 WriteLiteral("\r\n            <div class=\"workPanel homePanel rounded\">\r\n                <span class=\"overlay rounded\">\r\n                    <h1> Work Experience</h1>\r\n                </span>\r\n            </div>\r\n        ");
                 EndContext();

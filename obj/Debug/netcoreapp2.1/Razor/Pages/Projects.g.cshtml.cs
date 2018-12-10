@@ -65,7 +65,7 @@ using RandyPowell;
             WriteLiteral("        <div class=\"col-md-4 p-1\">\r\n            ");
             EndContext();
             BeginContext(310, 1207, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "778ea5dfa788482190a79bf32b1493ad", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2411d1aff1be4a1788157c65e5964286", async() => {
                 BeginContext(384, 154, true);
                 WriteLiteral("\r\n                <div class=\"card\">\r\n                    <div class=\"card-body projectCard\">\r\n                        <h3 class=\"card-title text-center\">");
                 EndContext();

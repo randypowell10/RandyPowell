@@ -13,11 +13,11 @@
         <ul>
             @foreach (var skill in Model.Skills.Where(i=>i.Type==0)) {
             <li>
-                <a class="btn btn-outline-skill mb-1" href="#@skill.Title-col" data-toggle="collapse" aria-expanded="false" aria-controls="@skill.Title-col">
+                <a class="btn btn-outline-skill mb-1" href="#skcol-@skill.ID" data-toggle="collapse" aria-expanded="false" aria-controls="skcol-@skill.ID">
                     @skill.Title <i class="fas fa-caret-down"></i>
                 </a>
-                <div class="border ml-5 rounded p-1 collapse" id="@skill.Title-col">
-
+                <div class="border ml-5 rounded p-1 collapse" id="skcol-@skill.ID">
+                    
                     <p class="mb-0 text-left">Used in...</p>
                     @foreach (var exp in skill.ExperienceSkills)
                     {
@@ -37,10 +37,10 @@
             @foreach (var skill in Model.Skills.Where(i => i.Type == 1))
             {
                 <li>
-                    <a class="btn btn-outline-skill mb-1" href="#@skill.Title-col" data-toggle="collapse" aria-expanded="false" aria-controls="@skill.Title-col">
+                    <a class="btn btn-outline-skill mb-1" href="#skcol-@skill.ID" data-toggle="collapse" aria-expanded="false" aria-controls="skcol-@skill.ID">
                         @skill.Title <i class="fas fa-caret-down"></i>
                     </a>
-                    <div class="border ml-5 rounded p-1 collapse" id="@skill.Title-col">
+                    <div class="border ml-5 rounded p-1 collapse" id="skcol-@skill.ID">
 
                         <p class="mb-0 text-left">Used in...</p>
                         @foreach (var exp in skill.ExperienceSkills)
@@ -61,10 +61,10 @@
             @foreach (var skill in Model.Skills.Where(i => i.Type == 2))
             {
                 <li>
-                    <a class="btn btn-outline-skill mb-1" href="#@skill.Title-col" data-toggle="collapse" aria-expanded="false" aria-controls="@skill.Title-col">
+                    <a class="btn btn-outline-skill mb-1" href="#skcol-@skill.ID" data-toggle="collapse" aria-expanded="false" aria-controls="skcol-@skill.ID">
                         @skill.Title <i class="fas fa-caret-down"></i>
                     </a>
-                    <div class="border ml-5 rounded p-1 collapse" id="@skill.Title-col">
+                    <div class="border ml-5 rounded p-1 collapse" id="skcol-@skill.ID">
 
                         <p class="mb-0 text-left">Used in...</p>
                         @foreach (var exp in skill.ExperienceSkills)
@@ -85,10 +85,10 @@
             @foreach (var skill in Model.Skills.Where(i => i.Type == 3))
             {
                 <li>
-                    <a class="btn btn-outline-skill mb-1" href="#@skill.Title-col" data-toggle="collapse" aria-expanded="false" aria-controls="@skill.Title-col">
+                    <a class="btn btn-outline-skill mb-1" href="#skcol-@skill.ID" data-toggle="collapse" aria-expanded="false" aria-controls="skcol-@skill.ID">
                         @skill.Title <i class="fas fa-caret-down"></i>
                     </a>
-                    <div class="border ml-5 rounded p-1 collapse" id="@skill.Title-col">
+                    <div class="border ml-5 rounded p-1 collapse" id="skcol-@skill.ID">
 
                         <p class="mb-0 text-left">Used in...</p>
                         @foreach (var exp in skill.ExperienceSkills)
@@ -109,10 +109,10 @@
             @foreach (var skill in Model.Skills.Where(i => i.Type == 4))
             {
                 <li>
-                    <a class="btn btn-outline-skill mb-1" href="#@skill.Title-col" data-toggle="collapse" aria-expanded="false" aria-controls="@skill.Title-col">
+                    <a class="btn btn-outline-skill mb-1" href="#skcol-@skill.ID" data-toggle="collapse" aria-expanded="false" aria-controls="skcol-@skill.ID">
                         @skill.Title <i class="fas fa-caret-down"></i>
                     </a>
-                    <div class="border ml-5 rounded p-1 collapse" id="@skill.Title-col">
+                    <div class="border ml-5 rounded p-1 collapse" id="skcol-@skill.ID">
 
                         <p class="mb-0 text-left">Used in...</p>
                         @foreach (var exp in skill.ExperienceSkills)
@@ -133,10 +133,10 @@
             @foreach (var skill in Model.Skills.Where(i => i.Type == 5))
             {
                 <li>
-                    <a class="btn btn-outline-skill mb-1" href="#@skill.Title-col" data-toggle="collapse" aria-expanded="false" aria-controls="@skill.Title-col">
+                    <a class="btn btn-outline-skill mb-1" href="#skcol-@skill.ID" data-toggle="collapse" aria-expanded="false" aria-controls="skcol-@skill.ID">
                         @skill.Title <i class="fas fa-caret-down"></i>
                     </a>
-                    <div class="border ml-5 rounded p-1 collapse" id="@skill.Title-col">
+                    <div class="border ml-5 rounded p-1 collapse" id="skcol-@skill.ID">
 
                         <p class="mb-0 text-left">Used in...</p>
                         @foreach (var exp in skill.ExperienceSkills)

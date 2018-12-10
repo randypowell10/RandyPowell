@@ -202,7 +202,7 @@ WriteAttributeValue(" ", 478, Model.Experience.Type==0 ? "workCard":"projectCard
             WriteLiteral("                ");
             EndContext();
             BeginContext(1724, 105, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2fecc6cc987d44d7b3adf1468938bbde", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "185600812be74eb491ca2cc082a1ad70", async() => {
                 BeginContext(1779, 46, true);
                 WriteLiteral("Return to List <i class=\"fas fa-undo-alt\"></i>");
                 EndContext();
@@ -236,7 +236,7 @@ WriteAttributeValue(" ", 478, Model.Experience.Type==0 ? "workCard":"projectCard
             WriteLiteral("                ");
             EndContext();
             BeginContext(1895, 109, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e43909fc78a24008a90e7511c950669a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8adce8ae45194a009bf26b7eccbd8233", async() => {
                 BeginContext(1954, 46, true);
                 WriteLiteral("Return to List <i class=\"fas fa-undo-alt\"></i>");
                 EndContext();

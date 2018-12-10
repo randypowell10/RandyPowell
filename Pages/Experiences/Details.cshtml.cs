@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using RandyPowell.Models;
 using Microsoft.AspNetCore.Authorization;
+using RandyPowell.Controllers;
 
 namespace RandyPowell.Pages.Experiences
 {
@@ -14,10 +15,11 @@ namespace RandyPowell.Pages.Experiences
     public class DetailsModel : PageModel
     {
         private readonly RandyPowell.Models.RandyPowellContext _context;
-
+        private readonly ExperienceController excon;
         public DetailsModel(RandyPowell.Models.RandyPowellContext context)
         {
             _context = context;
+            excon = new ExperienceController(_context);
         }
 
         public Experience Experience { get; set; }
@@ -30,10 +32,11 @@ namespace RandyPowell.Pages.Experiences
             }
 
             Experience = await _context.Experience
-                .Include(i=>i.ExperienceSkills)
-                .FirstOrDefaultAsync(m => m.ID == id);             ;
+                .Include(i => i.ExperienceSkills)
+                .FirstOrDefaultAsync(m => m.ID == id);
             Skills = await _context.Skill
                 .ToListAsync();
+
             if (Experience == null)
             {
                 return NotFound();

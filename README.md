@@ -1,6 +1,6 @@
 # Randy Powell Resume Website
 ### Built by: Randy Powell
-### URL OF SITE: randypowell.azurewebsites.net
+### URL OF SITE: https://randypowell.azurewebsites.net/
 
 ### Description
 This app was built to fulfill the Final Project for CT-406 at Capitol Technology University
@@ -36,10 +36,10 @@ site that is accessible on any device.
 I have created two small APIs, one for each data type. These APIs are stored in the Controllers folder as Controller classes. The ExperienceController contains
 an API which can be accessed through the route "/api/Experience". I created two GET functions for this API. The first, GetById(int id), retrieves an experience object
 by its integer id. The second, GetAll(), retrieves a list of all experiences. These two routes are not used anywhere in this app but can be accessed by navigating
-to their respective URL routes. For example, you can access the getAll() function at randypowell.azurewebsites.net/api/Experience . This will print all database
+to their respective URL routes. For example, you can access the getAll() function at https://randypowell.azurewebsites.net/api/Experience . This will print all database
 entries for experiences to the screen with no UI. The second API, defined in SkillController can be accessed through the route "/api/Skill". This API also
 has two GET functions. The first, getAll(), is similar to the one in the other API and retreives a list of all skill entries in the database. This function is not
-used anywhere in the app but can be accessed at randypowell.azurewebsites.net/api/Skill . The other function, GetByExpId(int id), retrieves a list of
+used anywhere in the app but can be accessed at https://randypowell.azurewebsites.net/api/Skill . The other function, GetByExpId(int id), retrieves a list of
 skill titles as strings which are associated to a specific experience, referenced by the ID parameter. It is used to easily gather a list of all skills
 that are used in an experience. This function is used in the app in Pages/Experiences/Details.cshtml. In a script at the end of that file, I call the API
 GET function using jquery and use it to populate the list of skills associated with the experience. 

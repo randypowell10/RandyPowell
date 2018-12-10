@@ -15,7 +15,6 @@ C:\Users\randy\source\repos\RandyPowell\RandyPowell\obj\Release\netcoreapp2.1\Ra
 C:\Users\randy\source\repos\RandyPowell\RandyPowell\obj\Release\netcoreapp2.1\RandyPowell.TagHelpers.output.cache
 C:\Users\randy\source\repos\RandyPowell\RandyPowell\obj\Release\netcoreapp2.1\RandyPowell.RazorCoreGenerate.cache
 C:\Users\randy\source\repos\RandyPowell\RandyPowell\obj\Release\netcoreapp2.1\Razor\Pages\About.g.cshtml.cs
-C:\Users\randy\source\repos\RandyPowell\RandyPowell\obj\Release\netcoreapp2.1\Razor\Pages\Contact.g.cshtml.cs
 C:\Users\randy\source\repos\RandyPowell\RandyPowell\obj\Release\netcoreapp2.1\Razor\Pages\Error.g.cshtml.cs
 C:\Users\randy\source\repos\RandyPowell\RandyPowell\obj\Release\netcoreapp2.1\Razor\Pages\Experiences\Create.g.cshtml.cs
 C:\Users\randy\source\repos\RandyPowell\RandyPowell\obj\Release\netcoreapp2.1\Razor\Pages\Experiences\Delete.g.cshtml.cs
